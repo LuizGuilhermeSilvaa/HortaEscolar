@@ -50,16 +50,42 @@
 
     <!-- Main Content -->
     <section class="main-content container">
+        <br>
+        <h3>Acesse nossas escolas!</h3>
+        <a type="button" href="horta_digital.html" class="btn btn-outline-info">Escolas Disponíveis</a>
+        <br>
+        <br>
         <h2>Sobre o Projeto</h2>
         <p>
-            O projeto Horta Escolar visa incentivar a produção e consumo de alimentos saudáveis, frescos, cultivados de forma sustentável nas escolas. Acreditamos que com o Horta escolar alunos  com interesse em agronomia, empreendedorismo,
-            economia e marketing possam desenvolver interesses acadêmicos no futuro.
+          O projeto Horta Escolar visa incentivar a produção e consumo de alimentos saudáveis, frescos, cultivados de forma sustentável nas escolas. Acreditamos que com o Horta escolar alunos  com interesse em agronomia, empreendedorismo,
+          economia e marketing possam desenvolver interesses acadêmicos no futuro.
         </p>
         <p>
-            Através do projeto, os alunos têm a oportunidade de aprender sobre o cultivo de plantas, a importância da agricultura urbana e como podemos integrar isso ao nosso cotidiano de forma simples e eficaz.
+          Através do projeto, os alunos têm a oportunidade de aprender sobre o cultivo de plantas, a importância da agricultura urbana e como podemos integrar isso ao nosso cotidiano de forma simples e eficaz.
         </p>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          const Toast = Swal.mixin({
+              toast: true,
+              position: "top-end",
+              showConfirmButton: false,
+              timer: 2000,
+              timerProgressBar: true,
+              didOpen: (toast) => {
+                  toast.onmouseenter = Swal.stopTimer;
+                  toast.onmouseleave = Swal.resumeTimer;
+              }
+          });
+
+          Toast.fire({
+              icon: "success",
+              title: "Bem vindo!"
+          });
+      });
+    </script>
 </body>
 </html>

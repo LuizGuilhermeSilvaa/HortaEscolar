@@ -36,6 +36,10 @@
 
     <!-- Main Content -->
     <section class="main-content container">
+      <br>
+      <a type="button" href="index.html" class="btn btn-outline-dark">Voltar</a>
+      <br>
+      <br>
       <h2>Escolas Disponíveis</h2>
       <table class="table">
           <thead>
@@ -46,16 +50,26 @@
           </thead>
           <tbody>
               <tr>
-                  <td><a href="armindo.html">Armindo Guarana</a></td>
+                  <td><a type="button" href="armindo.html" class="btn btn-primary">Armindo Guarana</a></td>
                   <td>5</td> <!-- Exemplo de quantidade -->
               </tr>
               <tr>
-                  <td><a href="index.html">Glorita Portugal</a></td>
-                  <td>15</td> <!-- Exemplo de quantidade -->
+                  <td><a type="button" href="#" id="neyde" class="btn btn-primary">Neyde Mesquita</a></td>
+                  <td>0</td> <!-- Exemplo de quantidade -->
               </tr>
           </tbody>
       </table>
     </section>
-    <script src="script.js"></script>
+    <script src="../Static/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+      document.getElementById("neyde").addEventListener("click", function() {
+          Swal.fire({
+              title: "Oooops!",
+              text: "Está escola não tem nenhuma variedade disponivel no momento.",
+              icon: "error"
+          });
+      });
+  </script>
 </body>
 </html>
