@@ -24,6 +24,12 @@ body {
     color: white;
 }
 
+#carouselExampleControls .carousel-inner img {
+    width: 500px; /* Ajuste a largura conforme necessário */
+    /* height: 100px; Mantém a proporção da imagem */
+    margin: 0 auto; /* Centraliza a imagem */
+}
+
 /* Main Content */
 .main-content {
     padding: 20px;
@@ -88,4 +94,11 @@ p {
         flex-direction: column;
         align-items: center;
     }
+
+    #carouselExampleControls .carousel-inner img {
+        width: 80%; /* Ajuste a largura conforme necessário */
+        height: auto; /* Mantém a proporção da imagem */
+        margin: 0 auto; /* Centraliza a imagem */
+    }
+    
 }
